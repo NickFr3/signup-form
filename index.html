@@ -4,21 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Sign Up Form</title>
 </head>
 
 <body>
-    <div class="left-side">
-        <p>
-            Photo by 
-            <a href="https://unsplash.com/@erenyldz98?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                Eren Yıldız
-            </a>
-                 on 
-            <a href="https://unsplash.com/photos/a-statue-of-a-man-with-a-broken-face-C-qxXpoCAmc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                Unsplash
-            </a>
-        </p>
+    <div class="container">
+        <div class="left-side">
+            <img src="./images/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg" class="card-background" alt="background image">
+
+            <div class="card-container">
+                <img src="./images/odin-lined.png" class="card-icon" alt="odin icon">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+    
+        <div class="right-side">
+            <p class="intro-text">
+                This is not a real online service!
+                You know you need something like this in your life
+                to help you realize your deepest dreams.</br>
+                Sign up <em>now</em> to get started.
+                </br>
+                </br>
+                You <em>know</em> you want to.
+            </p>
+            <div class="form-container">
+                <form action="/" method="post">
+                    <p>Let's do this!</p>
+                    
+                    <fieldset>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </fieldset>
+
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

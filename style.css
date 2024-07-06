@@ -1,18 +1,26 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    width: 100vw;
 }
 
 .left-side {
     grid-column: 1;
     position: relative;
-    width: 100%;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .card-background {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
@@ -22,11 +30,21 @@
     align-items: center;
     position: absolute;
     width: 100%;
-    background: black;
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
+    margin-top: 25%;
+
+}
+
+.card-container > .card-logo {
+    width: 15%;
+}
+
+.card-container > h1 {
+    font-size: 5vw;
 }
 
 .right-side {
     grid-column: 2;
+    padding: 25vh 5vw;
 }

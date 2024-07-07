@@ -1,3 +1,9 @@
+:root {
+    --identity-color: #003566;
+    --font-weight: 600;
+    --font-size: 2rem;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -46,5 +52,47 @@ body {
 
 .right-side {
     grid-column: 2;
-    padding: 25vh 5vw;
+    background-color: #fafafa;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-text {
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    padding: 20vh 5vw 2vh 5vw;
+}
+
+.form-card {
+    background-color: white;
+    padding: 2vh 5vw 2vh 5vw;
+    box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.25);
+}
+
+.form-card > p {
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    margin-top: 0;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.field-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+    width: 20vw;
+}
+
+input {
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    height: 2.5vh;
+    width: 75%;
 }

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-    --identity-color: #003566;
+    --identity-color: #05668d;
     --font-weight: 600;
     --font-size: 2rem;
 }
@@ -7,6 +9,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: roboto, sans-serif;
 }
 
 .container {
@@ -60,12 +63,12 @@ body {
 .intro-text {
     font-weight: var(--font-weight);
     font-size: var(--font-size);
-    padding: 20vh 5vw 2vh 5vw;
+    padding: 16vh 5vw 2vh 5vw;
 }
 
 .form-card {
     background-color: white;
-    padding: 2vh 5vw 2vh 5vw;
+    padding: 2vh 5vw;
     box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.25);
 }
 
@@ -95,4 +98,25 @@ input {
     border-radius: 4px;
     height: 2.5vh;
     width: 75%;
+}
+
+button {
+    background-color: var(--identity-color);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight);
+    color: white;
+    margin: 3vh 5vw;
+    padding: 1.5vh 3vw;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-container > p {
+    padding-left: 5vw;
+    font-size: 1.5rem;
+} 
+
+a {
+    color: var(--identity-color);
+    text-decoration: none;
 }

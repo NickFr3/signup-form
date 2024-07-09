@@ -100,6 +100,12 @@ input {
     width: 75%;
 }
 
+input:focus {
+    outline-width: thin;
+    outline-color: blue;
+    box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.25);
+}
+
 button {
     background-color: var(--identity-color);
     font-size: 1.5rem;
